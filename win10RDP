@@ -1,0 +1,8 @@
+ALLOW PING
+
+netsh advfirewall firewall add rule name="All ICMP V4" dir=in action=allow protocol=icmpv4
+
+
+ALLOW RDP IN 
+
+netsh advfirewall firewall add rule name="RDP" dir=in action=allow protocol=TCP localport=3389
